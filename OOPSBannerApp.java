@@ -29,13 +29,13 @@ public class OOPSBannerApp {
         String S6 = "       * ";
         String S7 = " ******  ";
 
-        // Print O O P S
-        System.out.println(O1 + " " + O1 + " " + P1 + " " + S1);
-        System.out.println(O2 + " " + O2 + " " + P2 + " " + S2);
-        System.out.println(O3 + " " + O3 + " " + P3 + " " + S3);
-        System.out.println(O4 + " " + O4 + " " + P4 + " " + S4);
-        System.out.println(O5 + " " + O5 + " " + P5 + " " + S5);
-        System.out.println(O6 + " " + O6 + " " + P6 + " " + S6);
-        System.out.println(O7 + " " + O7 + " " + P7 + " " + S7);
+        // Print O O P S using String.join()
+        System.out.println(String.join(" ", O1, O1, P1, S1));
+        System.out.println(String.join(" ", O2, O2, P2, S2));
+        System.out.println(String.join(" ", O3, O3, P3, S3));
+        System.out.println(String.join(" ", O4, O4, P4, S4));
+        System.out.println(String.join(" ", O5, O5, P5, S5));
+        System.out.println(String.join(" ", O6, O6, P6, S6));
+        System.out.println(String.join(" ", O7, O7, P7, S7));
     }
 }
