@@ -1,41 +1,11 @@
 public class OOPSBannerApp {
 
-public static void main(String[] args) {
+    public static void main(String[] args) {
 
-        // Letter O (7x9)
-        String[] O = {
-                "  *****  ",
-                " *     * ",
-                " *     * ",
-                " *     * ",
-                " *     * ",
-                " *     * ",
-                "  *****  "
-        };
+        String[] O = getOPattern();
+        String[] P = getPPattern();
+        String[] S = getSPattern();
 
-        // Letter P (7x9)
-        String[] P = {
-                " ******* ",
-                " *     * ",
-                " *     * ",
-                " ******* ",
-                " *       ",
-                " *       ",
-                " *       "
-        };
-
-        // Letter S (7x9)
-        String[] S = {
-                "  ****** ",
-                " *       ",
-                " *       ",
-                "  *****  ",
-                "       * ",
-                "       * ",
-                " ******  "
-        };
-
-        // Inline array initialization with String.join()
         String[] banner = {
                 String.join(" ", O[0], O[0], P[0], S[0]),
                 String.join(" ", O[1], O[1], P[1], S[1]),
@@ -46,9 +16,47 @@ public static void main(String[] args) {
                 String.join(" ", O[6], O[6], P[6], S[6])
         };
 
-        // Print using enhanced for-loop
         for (String line : banner) {
             System.out.println(line);
         }
+    }
+
+    // Static method for O pattern
+    public static String[] getOPattern() {
+        return new String[]{
+                "  *****  ",
+                " *     * ",
+                " *     * ",
+                " *     * ",
+                " *     * ",
+                " *     * ",
+                "  *****  "
+        };
+    }
+
+    // Static method for P pattern
+    public static String[] getPPattern() {
+        return new String[]{
+                " ******* ",
+                " *     * ",
+                " *     * ",
+                " ******* ",
+                " *       ",
+                " *       ",
+                " *       "
+        };
+    }
+
+    // Static method for S pattern
+    public static String[] getSPattern() {
+        return new String[]{
+                "  ****** ",
+                " *       ",
+                " *       ",
+                "  *****  ",
+                "       * ",
+                "       * ",
+                " ******  "
+        };
     }
 }
